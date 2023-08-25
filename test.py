@@ -1,21 +1,33 @@
+# import time
 # from time import sleep
-
 # counter = 0
-# # counter = int(input('Podaj liczbe w zakresie od 0 do 10: '))
-# # if counter > 10:
-# #     print('Podales liczbe z poza zakresu')
-# while counter < 3:
-#     print('licznik', counter)
+# for nasz_pojemnik in range(10):
 #     sleep(1)
-#     counter += 1
+#     counter = counter + 1
+#     print(nasz_pojemnik, counter)
 # print('Kabooom')
 
+# from time import sleep
+# for nasz_pojemnik in [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]:
+#     sleep(1)
+#     print(nasz_pojemnik)
+#     if nasz_pojemnik <= 3:
+#         sleep(2)
+# print('Kaboom')
 
-# pojemink_kamil = 4.5
-# print(type(pojemink_kamil))
-import time
+
 from time import sleep
+pojemnik = 4
+if pojemnik == 4:
+    print('w pojemniku jest 5')
+
+
 for nasz_pojemnik in range(10):
-    sleep(1)
     print(nasz_pojemnik)
-print('Kabooom')
+    if nasz_pojemnik == 2:
+        sleep(1)
+    if nasz_pojemnik == 1:
+        sleep(1)
+    if nasz_pojemnik == 0:
+        sleep(1)
+    sleep(1)
