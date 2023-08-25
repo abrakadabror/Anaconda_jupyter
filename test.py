@@ -16,18 +16,28 @@
 # print('Kaboom')
 
 
+# from time import sleep
+# pojemnik = 4
+# if pojemnik == 4:
+#     print('w pojemniku jest 5')
+
+
+# for nasz_pojemnik in range(10):
+#     print(nasz_pojemnik)
+#     if nasz_pojemnik == 2:
+#         sleep(1)
+#     if nasz_pojemnik == 1:
+#         sleep(1)
+#     if nasz_pojemnik == 0:
+#         sleep(1)
+#     sleep(1)
+# print('Kabooom')
+
 from time import sleep
-pojemnik = 4
-if pojemnik == 4:
-    print('w pojemniku jest 5')
-
-
 for nasz_pojemnik in range(10):
     print(nasz_pojemnik)
-    if nasz_pojemnik == 2:
+    if nasz_pojemnik >= 7:
+        sleep(2)
+    else:
         sleep(1)
-    if nasz_pojemnik == 1:
-        sleep(1)
-    if nasz_pojemnik == 0:
-        sleep(1)
-    sleep(1)
+print('Kaboom')
