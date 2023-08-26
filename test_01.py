@@ -16,3 +16,7 @@ while player1_score != 3 and player2_score != 3:
     else:
         print('Gracz dwa wygral')
         player2_score += 1
+if player1_score > player2_score:
+    print('gre wygrywa gracz 1')
+elif player1_score < player2_score:
+    print('gre wygrywa gracz 2')
