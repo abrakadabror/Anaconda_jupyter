@@ -33,11 +33,18 @@
 #     sleep(1)
 # print('Kabooom')
 
-from time import sleep
-for nasz_pojemnik in range(10):
-    print(nasz_pojemnik)
-    if nasz_pojemnik >= 7:
-        sleep(2)
-    else:
-        sleep(1)
-print('Kaboom')
+# from time import sleep
+# for nasz_pojemnik in range(10):
+#     print(nasz_pojemnik)
+#     if nasz_pojemnik >= 7:
+#         sleep(2)
+#     else:
+#         sleep(1)
+# print('Kaboom')
+
+poprawne_opcje = ['kamien', 'papier', 'nozyce']
+
+user_choice = input('Wybierz kamien, papier lub nozyce: ')
+
+if user_choice in poprawne_opcje:
+    print('opcja dozwolona')

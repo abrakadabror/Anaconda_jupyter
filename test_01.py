@@ -1,11 +1,19 @@
 player1_score = 0
 player2_score = 0
-while player1_score != 3 and player2_score != 3:
-    user_choice_1 = input(
-        str('Graczu numer 1 wybierz jedna z opcji: kamien/papier/nozyce '))
-    user_choice_2 = input(
-        str('Graczu numer 2 wybierz jedna z opcji: kamien/papier/nozyce '))
 
+options = ['kamien', 'papier', 'nozyce']
+while player1_score != 3 and player2_score != 3:
+    users_choices = True
+    while users_choices:
+        user_choice_1 = input(
+            'Graczu numer 1 wybierz jedna z opcji: kamien/papier/nozyce: ')
+        if user_choice_1 in options:
+            users_choices = False
+    while users_choices:
+        user_choice_2 = input(
+            'Graczu numer 2 wybierz jedna z opcji: kamien/papier/nozyce: ')
+        if user_choice_2 in options:
+            users_choices = False
     if user_choice_1 == 'papier' and user_choice_2 == 'kamien' or \
             user_choice_1 == 'kamien' and user_choice_2 == 'nozyce' or  \
             user_choice_1 == 'nozyce' and user_choice_2 == 'papier':
