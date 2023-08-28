@@ -1,21 +1,20 @@
-import getpass
 player1_score = 0
 player2_score = 0
-
 options = ['kamien', 'papier', 'nozyce']
+
+
+def download_choice(gracz):
+    users_choices_is_correct = True
+    while users_choices_is_correct:
+        user_choice = input(f' {gracz} podaj swoj wybor: ')
+        if user_choice in options:
+            users_choices_is_correct = False
+    return user_choice
+
+
 while player1_score != 3 and player2_score != 3:
-    users_choices = True
-    while users_choices:
-        user_choice_1 = getpass.getpass(
-            'Graczu numer 1 wybierz jedna z opcji: kamien/papier/nozyce: ')
-        if user_choice_1 in options:
-            users_choices = False
-    users_choices = True
-    while users_choices:
-        user_choice_2 = getpass.getpass(
-            'Graczu numer 2 wybierz jedna z opcji: kamien/papier/nozyce: ')
-        if user_choice_2 in options:
-            users_choices = False
+    user_choice_1 = download_choice('Gracz1')
+    user_choice_2 = download_choice('Gracz2')
 
     if user_choice_1 == 'papier' and user_choice_2 == 'kamien' or \
             user_choice_1 == 'kamien' and user_choice_2 == 'nozyce' or  \
