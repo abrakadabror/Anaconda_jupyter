@@ -32,7 +32,8 @@ def check_result(user_choice_1, user_choice_2):
              ('kamien', 'nozyce'): 1,
              ('nozyce', 'papier'): 1
              }
-    return score[(user_choice_1, user_choice_2)]
+    # jesli nie znajdzie w dict to ma zwrocic - 1
+    return score.get((user_choice_1, user_choice_2), -1)
 
 
 while player1_score != 3 and player2_score != 3:
